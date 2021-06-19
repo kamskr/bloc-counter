@@ -8,6 +8,7 @@ import 'package:flutter_bloc_concepts/presentation/screens/third_screen.dart';
 class AppRouter {
   final CounterCubit _counterCubit = CounterCubit();
 
+  // This is how you provide Blocs for specific routes
   Route onGenerateRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
       case "/":
